@@ -21,7 +21,7 @@
       <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         text
-        to="/login"
+        to="/"
       >
         <span class="mr-2">Login</span>
         <v-icon>mdi-account</v-icon>
