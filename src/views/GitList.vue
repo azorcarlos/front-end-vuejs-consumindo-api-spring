@@ -1,5 +1,7 @@
 <template>
-    <IncludeTemplate v-if="show" >
+<v-container>
+    <IncludeTemplate v-if="show" :nome="this.dataUser.nome">
+      
       <v-btn
         @click="sair"
         color="error"
@@ -104,10 +106,11 @@
     </div>
   </div>
 </IncludeTemplate>
+</v-container>
 </template>
 <script>
 // @ is an alias to /src
-import IncludeTemplate from '@/components/Template.vue'
+import IncludeTemplate   from '../AppRestrict'
 
 export default {
   name: 'Home',
@@ -120,6 +123,7 @@ export default {
     linguagem:'Php',
     seguidores:'10',
     repositorios:'10',
+    dataUser:'',
     page: 1,
         pageCount: 0,
         itemsPerPage: 10,
@@ -179,8 +183,10 @@ export default {
  
     }else{
       this.show = true
-        var storage =  sessionStorage.getItem('socin-storage')?JSON.parse(sessionStorage.getItem('socin-storage')):'';
-        this.$http.defaults.headers.common['Authorization'] = 'Bearer '+storage.token
+       this.dataUser =  sessionStorage.getItem('socin-storage')?JSON.parse(sessionStorage.getItem('socin-storage')):'';
+        this.$http.defaults.headers.common['Authorization'] = 'Bearer '+this.dataUser.token
+
+        console.log(this.dataUser)
         
     }
   }

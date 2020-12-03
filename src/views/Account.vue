@@ -28,7 +28,7 @@
             class="mr-4 primary"
             @click="submidtForm"
           >
-            submit
+            Salvar
           </v-btn>
           <v-btn @click="clear" class="mr-4 error">
             Limpar

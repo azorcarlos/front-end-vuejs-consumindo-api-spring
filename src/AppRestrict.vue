@@ -17,21 +17,13 @@
       </div>
 
       <v-spacer></v-spacer>
-
+       <span class="mr-2">Olá {{nome}}</span>
       <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         text
         to="/"
       >
-        <span class="mr-2">Login</span>
-        <v-icon>mdi-account</v-icon>
-      </v-btn>    
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        text
-        to="/new-login"
-      >
-        <span class="mr-2">Criar Conta</span>
+        <span class="mr-2">Sair</span>
         <v-icon>mdi-account-edit</v-icon>
       </v-btn>
     </v-app-bar>
@@ -49,7 +41,9 @@
 export default {
   name: 'App',
   data: () => ({
+
     //
   }),
+  props:['nome']
 };
 </script>
