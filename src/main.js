@@ -7,8 +7,7 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 Vue.prototype.$http = Axios
-Vue.prototype.$urlApi = 'https://morning-oasis-52646.herokuapp.com'
-//Vue.prototype.$urlApi = 'http://localhost:8085'
+Vue.prototype.$urlApi = 'http://localhost:8085'
 
 new Vue({
   router,
