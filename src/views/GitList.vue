@@ -1,7 +1,7 @@
 <template>
     <IncludeTemplate v-if="show" >
       <v-btn
-        to="/"
+        @click="sair"
         color="error"
       >
         <span class="mr-2">Sair</span>
@@ -167,6 +167,9 @@ export default {
               });
           }
       },
+      sair(){
+         window.location.href = '/';
+      }
       
   },
    mounted() {
