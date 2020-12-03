@@ -1,23 +1,18 @@
 ## Projeto consumindo Api Rest Spring Boot
 ### Consultar dados de repositórios publicos do GitHub
 
-## Project setup
+## Instalar o Projeto
 ```
+git clone https://github.com/azorcarlos/front-end-vuejs-consumindo-api-spring
+cd front-end-vuejs-consumindo-api-spring\
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
+http://localhost:8080
 ```
 
-### Compiles and minifies for production
+### Gerar build
 ```
 npm run build
-```
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration
