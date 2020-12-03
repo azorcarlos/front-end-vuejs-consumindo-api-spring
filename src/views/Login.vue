@@ -87,8 +87,8 @@ export default {
                 if (response.status == 200) {
                     window.sessionStorage.setItem('socin-storage', JSON.stringify(response.data));
                     setTimeout(function () {
-                      this.$router.push('/git-list')
-                    }, 1000);
+                      window.location.href = '/git-list';
+                  }, 1000);
                 }
                   
               }).catch(error => {
