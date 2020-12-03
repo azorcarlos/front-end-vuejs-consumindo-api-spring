@@ -33,6 +33,7 @@
             label="Linguagem"
             v-model="linguagem"  
             required
+            type="strings"
             :rules="[v => !!v || 'Campo é obrigatório']"
           ></v-text-field>
         </v-col>
@@ -44,6 +45,7 @@
           <v-text-field
             label="Qtd Repositórios"
             v-model="repositorios"
+            type="number"
             required
             :rules="[v => !!v || 'Campo é obrigatório']"
             ></v-text-field>
@@ -58,6 +60,7 @@
             label="Qtd Seguidores"
             v-model="seguidores"
             required
+            type="number"
             :rules="[v => !!v || 'Campo é obrigatório']"
           ></v-text-field>
         </v-col>

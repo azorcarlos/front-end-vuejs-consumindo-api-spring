@@ -76,7 +76,7 @@ export default {
                 }
                     
               }).catch(error => {
-                  alert('Ocorreu em erro ao realizar esta operação! Por favor tente novamente mais tarde.')
+                  alert('Este usuário já existe.')
               });
           }
       },
