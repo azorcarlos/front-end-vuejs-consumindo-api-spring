@@ -5,9 +5,13 @@ const path        = require('path')
 
 const app = express()
 app.use(express.static(__dirname + '/dist'));
-app.use(function(req, res) {
-    res.send(404, 'Page not found');
-});
 
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, '/dist/index.html'), function(err) {
+      if (err) {
+        res.status(500).send(err)
+      }
+    })
+  })
 const port =  process.env.PORT || 8080
 app.listen(port)
