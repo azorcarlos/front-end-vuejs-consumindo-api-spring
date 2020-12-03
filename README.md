@@ -1,4 +1,5 @@
-## Projeto consumindo api publica do git hub com api spring boot
+## Projeto consumindo api ret Spring Boot
+### Consultar dados de repositórios publicos do GitHub
 
 ## Project setup
 ```
